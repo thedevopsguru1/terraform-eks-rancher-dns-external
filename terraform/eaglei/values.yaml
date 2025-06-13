@@ -1,0 +1,12 @@
+provider: aws
+aws:
+  region: us-east-1
+domainFilters:
+  - anaeleboo.com
+policy: upsert-only
+registry: txt
+txtOwnerId: my-identifier
+
+serviceAccount:
+  create: false
+  name: external-dns
